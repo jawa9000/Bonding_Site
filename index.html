@@ -4,50 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cohutta Bonding LLC</title>
-    <!--
-        width: 1440
-        height header: 320
-
-        default font: https://fonts.google.com/specimen/Inter
-        second font: https://fonts.google.com/specimen/Roboto+Slab
-        * used on call and the labels
-
-    -->
+    <!-- meta data-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet" />
+
     <style>
       body {
         font-family: Inter, sans-serif;
         margin: 20px;
         background-color: #013567;
       }
-
       ul {
         list-style-type: none;
         padding: 0;
       }
-
       ul li {
         margin-bottom: 5px;
       }
-
-      /* Responsive Design */
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 600px) { /* Responsive Design */
         body {
           margin: 10px;
         }
       }
-
-      .blue,
-      .white {
+      .blue, .white, .greyBackground {
         text-align: center;
       }
       p {
@@ -62,7 +43,6 @@
         margin: 0 auto;
       }
       .white {
-        background-color: white;
         width: 100%;
       }
       .orange,
@@ -72,7 +52,6 @@
         font-size: 36px;
       }
       .phoneWhite {
-        color: white;
         font-family: "Roboto Slab", serif;
         font-size: 36px;
       }
@@ -80,8 +59,6 @@
         display: inline-block;
         padding: 15px;
         border: 5px solid rgba(1, 53, 103, 1);
-        opacity: 1;
-        background-color: rgba(255, 255, 255, 1);
       }
       ul {
         list-style-type: none;
@@ -89,85 +66,63 @@
       }
       li {
         display: inline-block;
-        margin-right: 10px; /* Adjust as needed for spacing between items */
+        margin-right: 10px;
       }
       li:not(:last-child)::after {
-        content: "\2022"; /* Unicode character for a bullet point */
-        margin-left: 10px; /* Adjust as needed for spacing between bullet point and text */
+        content: "\2022";
+        margin-left: 10px;
       }
       .blue {
-        opacity: 1;
         background-image: linear-gradient(
           90deg,
           rgba(2, 51, 99, 1) 0%,
           rgba(2, 66, 128, 1) 100%
         );
-        color: white;
       }
-
       h1 {
-        opacity: 1;
-        color: rgba(255, 255, 255, 1);
-        font-family: "Inter";
-        font-weight: bold;
         font-size: 60px;
         font-weight: 800;
-        font-style: normal;
         letter-spacing: 1.09px;
-        text-align: center;
         text-transform: uppercase;
       }
       .county {
-        opacity: 1;
-        color: rgba(255, 255, 255, 1);
         font-family: "Inter-Bold";
-        font-size: 24px;
-        font-weight: 700;
-        font-style: normal;
-        letter-spacing: 0px;
-        text-align: center;
       }
       .greyBackground {
         background-color: #f5f5f5;
-        text-align: center;
       }
       .open {
-        opacity: 1;
         color: rgba(0, 0, 0, 1);
         font-family: "Roboto Slab", serif;
-        font-weight: bold;
-        font-size: 24px;
-        font-weight: 700;
-        font-style: normal;
-        letter-spacing: 0px;
-        text-align: center;
         line-height: 38px;
       }
       .copy {
-        opacity: 1;
         color: rgba(0, 0, 0, 1);
-        font-family: "Inter";
-        font-weight: bold;
-        font-size: 24px;
-        font-weight: 700;
-        font-style: normal;
-        letter-spacing: 0px;
-        text-align: center;
         line-height: 38px;
       }
-      .whiteText {
-        color: white;
+      .whiteText, .copyright, h1, .county, .blueBorder, .phoneWhite, .white, .blue  {
+        color: rgba(255, 255, 255, 1);
       }
       .copyright {
-        opacity: 1;
-        color: rgba(255, 255, 255, 1);
-        font-family: "Inter";
-        font-weight: bold;
         font-size: 18px;
         font-weight: 500;
-        font-style: normal;
         letter-spacing: 0.43px;
+      }
+      .copyright, .copy, .county, h1, .blue, .blueBorder, .open {
+        opacity: 1;
+        font-style: normal;
         text-align: center;
+      }
+      .copyright, .copy, h1, .open {
+        font-weight: bold;
+      }
+      .copyright, .copy, h1 {
+        font-family: "Inter";
+      }
+      .copy, .open, .county {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0px;
       }
     </style>
   </head>
