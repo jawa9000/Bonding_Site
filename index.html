@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cohutta Bonding LLC</title>
+    <!--
+        width: 1440
+        height header: 320
+
+        default font: https://fonts.google.com/specimen/Inter
+        second font: https://fonts.google.com/specimen/Roboto+Slab
+        * used on call and the labels
+
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Inter, sans-serif;
+        margin: 20px;
+        background-color: #013567;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        margin-bottom: 5px;
+      }
+
+      /* Responsive Design */
+      @media only screen and (max-width: 600px) {
+        body {
+          margin: 10px;
+        }
+      }
+
+      .blue,
+      .white {
+        text-align: center;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+      article {
+        padding: 5px;
+      }
+      hr {
+        border: 2px solid rgba(239, 124, 70, 1);
+        width: 160px;
+        margin: 0 auto;
+      }
+      .white {
+        background-color: white;
+        width: 100%;
+      }
+      .orange,
+      .phoneOrange {
+        color: rgba(239, 124, 70, 1);
+        font-family: "Roboto Slab", serif;
+        font-size: 36px;
+      }
+      .phoneWhite {
+        color: white;
+        font-family: "Roboto Slab", serif;
+        font-size: 36px;
+      }
+      .blueBorder {
+        display: inline-block;
+        padding: 15px;
+        border: 5px solid rgba(1, 53, 103, 1);
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 1);
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        display: inline-block;
+        margin-right: 10px; /* Adjust as needed for spacing between items */
+      }
+      li:not(:last-child)::after {
+        content: "\2022"; /* Unicode character for a bullet point */
+        margin-left: 10px; /* Adjust as needed for spacing between bullet point and text */
+      }
+      .blue {
+        opacity: 1;
+        background-image: linear-gradient(
+          90deg,
+          rgba(2, 51, 99, 1) 0%,
+          rgba(2, 66, 128, 1) 100%
+        );
+        color: white;
+      }
+
+      h1 {
+        opacity: 1;
+        color: rgba(255, 255, 255, 1);
+        font-family: "Inter";
+        font-weight: bold;
+        font-size: 60px;
+        font-weight: 800;
+        font-style: normal;
+        letter-spacing: 1.09px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .county {
+        opacity: 1;
+        color: rgba(255, 255, 255, 1);
+        font-family: "Inter-Bold";
+        font-size: 24px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+      .greyBackground {
+        background-color: #f5f5f5;
+        text-align: center;
+      }
+      .open {
+        opacity: 1;
+        color: rgba(0, 0, 0, 1);
+        font-family: "Roboto Slab", serif;
+        font-weight: bold;
+        font-size: 24px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0px;
+        text-align: center;
+        line-height: 38px;
+      }
+      .copy {
+        opacity: 1;
+        color: rgba(0, 0, 0, 1);
+        font-family: "Inter";
+        font-weight: bold;
+        font-size: 24px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0px;
+        text-align: center;
+        line-height: 38px;
+      }
+      .whiteText {
+        color: white;
+      }
+      .copyright {
+        opacity: 1;
+        color: rgba(255, 255, 255, 1);
+        font-family: "Inter";
+        font-weight: bold;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.43px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <article class="blue">
+        image
+        <h1>COHUTTA BONDING LLC</h1>
+        <p class="copy whiteText">Murray County, Georgia</p>
+      </article>
+      <article class="greyBackground">
+        <h2 class="phoneOrange">
+          Call
+          <a class="phoneOrange" href="tel:7064834251">706-483-4251</a> NOW!
+        </h2>
+        <p class="open">Open 24 Hours/Day, 7 Days/Week</p>
+        <hr />
+        <p class="copy">
+          Confidential, quick and easy, affordable bail bond, locally owned,
+          fast, friendly service since 2006
+        </p>
+        <div class="blueBorder">
+          <h2 class="orange">OUR BONDS INCLUDE</h2>
+          <p class="copy">
+            Local, state-wide, out-of-state, immigration, criminal, traffic,
+            juvenile
+          </p>
+        </div>
+        <h2 class="orange">PAYMENT TYPES ACCEPTED</h2>
+        <ul class="copy">
+          <li>Cash</li>
+          <li>Major credit cards</li>
+          <li>Zelle</li>
+          <li>PayPal</li>
+          <li>CashApp</li>
+          <li>Venmo</li>
+        </ul>
+        <p class="copy">NO CHECKS ACCEPTED</p>
+      </article>
+      <article class="blue">
+        <p class="orange">HERE WHEN YOU NEED US</p>
+        <h2 class="phoneWhite">
+          Call <a class="phoneWhite" href="tel:7064834251">706-483-4251</a> NOW!
+        </h2>
+        <hr />
+        <p class="copyright">
+          © 2023. All rights reserved. Cohutta Bonding LLC.
+        </p>
+      </article>
+    </section>
+  </body>
+</html>
