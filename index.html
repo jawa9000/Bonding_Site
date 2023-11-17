@@ -45,8 +45,7 @@
       .white {
         width: 100%;
       }
-      .orange,
-      .phoneOrange {
+      .orange, .phoneOrange {
         color: rgba(239, 124, 70, 1);
         font-family: "Roboto Slab", serif;
         font-size: 36px;
@@ -73,17 +72,14 @@
         margin-left: 10px;
       }
       .blue {
-        background-image: linear-gradient(
-          90deg,
-          rgba(2, 51, 99, 1) 0%,
-          rgba(2, 66, 128, 1) 100%
-        );
+        background-image: linear-gradient(90deg,rgba(2, 51, 99, 1) 0%,rgba(2, 66, 128, 1) 100%);
       }
       h1 {
         font-size: 60px;
         font-weight: 800;
         letter-spacing: 1.09px;
         text-transform: uppercase;
+        margin: 0 10px;
       }
       .county {
         font-family: "Inter-Bold";
@@ -95,6 +91,7 @@
         color: rgba(0, 0, 0, 1);
         font-family: "Roboto Slab", serif;
         line-height: 38px;
+        margin: 5px 10px 15px 10px;
       }
       .copy {
         color: rgba(0, 0, 0, 1);
@@ -107,6 +104,7 @@
         font-size: 18px;
         font-weight: 500;
         letter-spacing: 0.43px;
+        margin: 50px 10px 10px 10px;
       }
       .copyright, .copy, .county, h1, .blue, .blueBorder, .open {
         opacity: 1;
@@ -124,6 +122,30 @@
         font-weight: 700;
         letter-spacing: 0px;
       }
+      .countyOffset {
+        margin: 0 10px 25px 0;
+      }
+      h2 {
+        margin: 15px 10px 0 10px;
+      }
+      .confidential {
+        margin: 10px 10px 25px 10px;
+      }
+      .paymentOffset {
+        margin: 25px 10px 0px 10px
+      }
+      .paymentListOffset {
+        margin: 10px;
+      }
+      .checksOffset {
+        margin: 10px 10px 50px 10px;
+      }
+      .hereOffset {
+        margin: 25px 10px 10px 10px;
+      }
+      .hrOffset {
+        margin: 25px auto;
+      }
     </style>
   </head>
 
@@ -132,7 +154,7 @@
       <article class="blue">
         image
         <h1>COHUTTA BONDING LLC</h1>
-        <p class="copy whiteText">Murray County, Georgia</p>
+        <p class="copy whiteText countyOffset">Murray County, Georgia</p>
       </article>
       <article class="greyBackground">
         <h2 class="phoneOrange">
@@ -141,9 +163,7 @@
         </h2>
         <p class="open">Open 24 Hours/Day, 7 Days/Week</p>
         <hr />
-        <p class="copy">
-          Confidential, quick and easy, affordable bail bond, locally owned,
-          fast, friendly service since 2006
+        <p class="copy confidential">Confidential, quick and easy, affordable bail bond, locally owned, fast, friendly service since 2006
         </p>
         <div class="blueBorder">
           <h2 class="orange">OUR BONDS INCLUDE</h2>
@@ -152,8 +172,8 @@
             juvenile
           </p>
         </div>
-        <h2 class="orange">PAYMENT TYPES ACCEPTED</h2>
-        <ul class="copy">
+        <h2 class="orange paymentOffset">PAYMENT TYPES ACCEPTED</h2>
+        <ul class="copy paymentListOffset">
           <li>Cash</li>
           <li>Major credit cards</li>
           <li>Zelle</li>
@@ -161,17 +181,15 @@
           <li>CashApp</li>
           <li>Venmo</li>
         </ul>
-        <p class="copy">NO CHECKS ACCEPTED</p>
+        <p class="copy checksOffset">NO CHECKS ACCEPTED</p>
       </article>
       <article class="blue">
-        <p class="orange">HERE WHEN YOU NEED US</p>
+        <p class="orange hereOffset">HERE WHEN YOU NEED US</p>
         <h2 class="phoneWhite">
           Call <a class="phoneWhite" href="tel:7064834251">706-483-4251</a> NOW!
         </h2>
-        <hr />
-        <p class="copyright">
-          © 2023. All rights reserved. Cohutta Bonding LLC.
-        </p>
+        <hr class="hrOffset" />
+        <p class="copyright">© 2023. All rights reserved. Cohutta Bonding LLC.</p>
       </article>
     </section>
   </body>
